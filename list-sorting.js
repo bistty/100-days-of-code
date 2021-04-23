@@ -1,13 +1,13 @@
 /**
  * Sorting the list of some programing language
- * @authors Jesukunle Esther (bisolajesukunle@gmail.com)
+ * @author Jesukunle Esther (bisolajesukunle@gmail.com)
  * 
  * You are given a list of some programming languages
  * 
  * You are to return how many times each language appears as an object
  */
 
- function sortProgrammingLang(languages) {
+function sortProgrammingLang(languages) {
   const programmingLangArray = languages.split(",");
   return programmingLangArray.reduce((total, item) => {
     total[item] ? (total[item] = total[item] + 1) : 1;
@@ -15,7 +15,7 @@
   }, {});
 }
 //example
-var languageAns = sortProgrammingLang(
+const languageAns = sortProgrammingLang(
   "Javascript,Python,C#,Java,Java,C++,Python,C# Javascript,Python,Java,C++,Java"
 );
 console.log(languageAns);
