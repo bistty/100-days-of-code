@@ -18,7 +18,7 @@ function narcissistic(number) {
         numToStr.split("").reduce((total, num) => {
             total += Math.pow(+num, numberLength);
             return total;
-        }, 0) === 153
+        }, 0) === number
     );
 }
 
