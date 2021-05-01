@@ -8,9 +8,13 @@
  * reverse each word in the string
  */
 
-function reverse(word) {
-    return word.split(" ").map(words => words.split('').reverse().join('')).join(' ')
+function reverseSentence(sentence) {
+    const words = sentence.split(' ');
+    const reverseWords = words.map(word => word.split('').reverse().join(''));
+    return reverseWords.join(' ');
 }
-console.log(reverse("consistency is the key"));
+
+const answer = reverseSentence("consistency is the key")
+console.log(answer);
 
 //answer =>ycnetsisnoc si eht yek
